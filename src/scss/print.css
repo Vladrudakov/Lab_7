@@ -1,0 +1,32 @@
+@media print {
+  header,
+  footer {
+    display: none;
+  }
+
+  @page {
+    margin: 50px;
+  }
+
+  body {
+    font-family: "Times New Roman", Georgia, Palatino, serif;
+    background: none;
+    color: black;
+  }
+
+  * {
+    background: none;
+    background-image: none;
+  }
+
+  a:after {
+    content: " (" attr(href) ")";
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    page-break-inside: avoid;
+  }
+}
